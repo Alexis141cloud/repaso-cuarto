@@ -1,0 +1,24 @@
+import random
+import time
+
+corredor1 = 0
+corredor2 = 0
+segundos = 0
+meta = 100 
+
+print("¡Comienza la carrera a 100 metros!")
+
+while corredor1 < meta and corredor2 < meta:
+    segundos += 1
+    corredor1 += random.randint(1, 10) # Avanza entre 1 y 10 metros
+    corredor2 += random.randint(1, 10)
+    
+    print(f"Segundo {segundos} -> Corredor 1: {corredor1}m | Corredor 2: {corredor2}m")
+    time.sleep(0.3) 
+
+if corredor1 >= meta and corredor2 >= meta:
+    print(f"¡Empate a los {segundos} segundos!")
+elif corredor1 >= meta:
+    print(f"¡Ganó el Corredor 1 en {segundos} segundos!")
+else:
+    print(f"¡Ganó el Corredor 2 en {segundos} segundos!")
