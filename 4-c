@@ -1,0 +1,9 @@
+entrada = input("Ingresa números enteros separados por espacios: ")
+arreglo = [int(x) for x in entrada.split()]
+
+minimo = arreglo[0] 
+for num in arreglo:
+    if num < minimo:
+        minimo = num
+
+print(f"El elemento mínimo es: {minimo}")
