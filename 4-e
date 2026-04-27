@@ -1,0 +1,9 @@
+entrada = input("Ingresa números enteros separados por espacios: ")
+arreglo = [int(x) for x in entrada.split()]
+
+contador_pares = 0
+for num in arreglo:
+    if num % 2 == 0:
+        contador_pares += 1
+
+print(f"Hay {contador_pares} elementos pares en el arreglo.")
