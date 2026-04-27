@@ -1,0 +1,9 @@
+suma_total = 0
+
+while True:
+    numero = int(input("Ingresa un número positivo (o uno negativo para terminar): "))
+    if numero < 0:
+        break
+    suma_total += numero
+
+print(f"La suma de los números positivos ingresados es: {suma_total}")
