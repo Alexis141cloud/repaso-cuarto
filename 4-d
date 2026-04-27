@@ -1,0 +1,7 @@
+entrada = input("Ingresa números enteros separados por espacios: ")
+arreglo = [int(x) for x in entrada.split()]
+
+suma = sum(arreglo)
+promedio = suma / len(arreglo)
+
+print(f"El promedio de los elementos es: {promedio}")
