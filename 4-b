@@ -1,0 +1,9 @@
+entrada = input("Ingresa números enteros separados por espacios: ")
+arreglo = [int(x) for x in entrada.split()]
+
+maximo = arreglo[0] # Asumimos que el primero es el mayor inicialmente
+for num in arreglo:
+    if num > maximo:
+        maximo = num
+
+print(f"El elemento máximo es: {maximo}")
