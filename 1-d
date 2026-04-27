@@ -1,0 +1,9 @@
+letra = input("Ingresa una letra del alfabeto: ").lower()
+
+if len(letra) == 1 and letra.isalpha():
+    if letra in "aeiou":
+        print("La letra es una vocal.")
+    else:
+        print("La letra es una consonante.")
+else:
+    print("Error: Por favor ingresa solo una letra válida.")
