@@ -1,0 +1,14 @@
+producto_total = 1
+se_ingresaron_datos = False
+
+while True:
+    numero = int(input("Ingresa un número positivo para multiplicar (o negativo para terminar): "))
+    if numero < 0:
+        break
+    producto_total *= numero
+    se_ingresaron_datos = True
+
+if se_ingresaron_datos:
+    print(f"El producto de todos los números ingresados es: {producto_total}")
+else:
+    print("No se ingresó ningún número positivo.")
