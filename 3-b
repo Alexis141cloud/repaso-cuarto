@@ -1,0 +1,12 @@
+cadena = input("Ingresa una cadena de texto: ").lower()
+letra_buscada = input("Ingresa la letra a buscar: ").lower()
+
+contador = 0
+indice = 0
+
+while indice < len(cadena):
+    if cadena[indice] == letra_buscada:
+        contador += 1
+    indice += 1
+
+print(f"La letra '{letra_buscada}' aparece {contador} veces en el texto.")
